@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="LoginBox" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Margin="0,27,0,0" Grid.Row="2" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="133" Height="25" Grid.RowSpan="2"/>
+        <PasswordBox x:Name="PassBox" Grid.ColumnSpan="2" Grid.Column="2" HorizontalAlignment="Left" Grid.Row="3" VerticalAlignment="Center" Width="133" Height="25"/>
+        <TextBlock x:Name="LoginBlock" Grid.Column="1" HorizontalAlignment="Left" Grid.Row="2" Text="Логин" TextWrapping="Wrap" VerticalAlignment="Top" Height="25" Width="90" Margin="0,27,0,0"/>
+        <TextBlock x:Name="PassBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="1,0,0,0" Grid.Row="3" Text="Пароль" TextWrapping="Wrap" VerticalAlignment="Center" Height="25" Width="89"/>
+        <Button x:Name="LoginBT" Content="Вход" Grid.Column="2" HorizontalAlignment="Left" Margin="78,54,0,0" Grid.Row="3" VerticalAlignment="Top" Width="55" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
     </Grid>
 </Window>
